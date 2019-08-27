@@ -8,7 +8,7 @@ var wins = 0;
 var loses = 0;
 var guessesLeft = 10;
 
-do {}
+
 // Prompt user for a guess
 var userGuess = prompt("Guess what letter I'm thinking of");
 
@@ -24,7 +24,7 @@ if (randomLetter == userGuess.toLowerCase()) {
     wins++;
 } else {
     // Increase number of Losses and decrease guesses
-    loses--;
+    loses++;
 }
 // decrease guesses regardless of wining or losing
     guessesLeft--;

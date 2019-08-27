@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    
+}
+
+.jumbotron {
+    color: white;
+    
+    background-color: #6284FF;
+    background-image: linear-gradient(359deg, #6284FF 9%, #FF0000 88%);
+}
+
+.scores {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 4em;
+}

@@ -11,9 +11,17 @@
 </head>
 <body>
     <div class="container">
-            <header class="jumbotron">
+            <header class="jumbotron purple-gradient">
                 <h1>Psychic Game!</h1>
+                <h2>Gues what letter I'm thinking of.</h2>
+
             </header>
+            <div class="col-md-12 scores">
+                    <p>Wins: <span id="wins"> 0</span></p>
+                    <p>Losses: <span id="losses"> 0</span></p>
+                    <p>Guesses Left: <span id="guesses-left"> 10</span></p>
+                    <p>Your Guesses So Far: <span id="guesses-so-far"> </span></p>
+            </div>
 
             <!-- Put the following text on your page:
         3. Guess what letter I'm thinking of
@@ -24,12 +32,7 @@
         8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
         9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins). -->
 
-            <h2>Gues what letter I'm thinking of.</h2>
 
-            <p>Wins: <span id="wins"> 0</span></p>
-            <p>Losses: <span id="losses"> 0</span></p>
-            <p>Guesses Left: <span id="guesses-left"> 10</span></p>
-            <p>Your Guesses So Far: <span id="guesses-so-far"> </span></p>
         </div>
     <script src="assets/javascript/game.js"></script>
 </body>
