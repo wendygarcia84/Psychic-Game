@@ -9,10 +9,10 @@ var userGuess;
 
 
 //Store the ID's of each span into a variable
- //var guessesText = document.getElementById("guesses-so-far");
-// var wins = document.getElementById("wins");
-// var losses = document.getElementById("losses");
-document.getElementById("guesses-left");
+var guessesText = document.getElementById("guesses-left");
+var winsText = document.getElementById('wins');
+var lossesText = document.getElementById('losses');
+var lettersText = document.getElementById('guesses-so-far');
 
 // Next, we give JavaScript a function to execute when onkeyup event fires.
 document.onkeyup = function(event) {
@@ -37,10 +37,10 @@ document.onkeyup = function(event) {
                 guessesCount = 10;
                 guessesSoFar = [];
             }
-            document.getElementById('wins').innerHTML = winCount;
-            document.getElementById('losses').innerHTML = lossCount;
-            document.getElementById('guesses-left').innerHTML = guessesCount;
-            document.getElementById('guesses-so-far').innerHTML = guessesSoFar;
+            winsText.textContent = winCount;
+            lossesText.textContent = lossCount;
+            guessesText.textContent = guessesCount;
+            lettersText.textContent = guessesSoFar;
 };
 
 
